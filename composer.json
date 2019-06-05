@@ -1,0 +1,42 @@
+{
+  "name": "coreshop/payum-payment-bundle",
+  "type": "pimcore-bundle",
+  "description": "CoreShop - Payum Payment Bundle",
+  "keywords": [
+    "coreshop",
+    "pimcore",
+    "ecommerce"
+  ],
+  "homepage": "http://www.coreshop.org",
+  "license": "GPL-3.0-or-later",
+  "authors": [
+    {
+      "name": "Dominik Pfaffenbauer",
+      "email": "dominik@pfaffenbauer.at",
+      "homepage": "https://www.pfaffenbauer.at/",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^7.2",
+    "coreshop/payment-bundle": "^2.0",
+    "pimcore/pimcore": "^5.8.0",
+    "payum/payum-bundle": "^2.3",
+    "php-http/guzzle6-adapter": "^2.0"
+  },
+  "config": {
+    "bin-dir": "bin"
+  },
+  "autoload": {
+    "psr-4": {
+      "CoreShop\\Bundle\\PayumPaymentBundle\\": ""
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "extra": {
+    "branch-alias": {
+      "dev-master": "2.1-dev"
+    }
+  }
+}
